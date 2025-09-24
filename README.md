@@ -37,5 +37,20 @@ This is a responsive registration form built using HTML, CSS, and JavaScript. It
 
 - Getting the submitted data to display correctly in the output section took some trial and error. I had to learn how to access values from different input types, including checkboxes.
 
+
+## Accessibility & ARIA Enhancements
+
+This project includes several accessibility improvements using semantic HTML and ARIA attributes to support users with assistive technologies:
+
+- **Navigation landmark**: The `<nav>` element includes `role="navigation"` to help screen readers identify the section as a navigational region.
+- **Input with `aria-label`**: The first name field uses `aria-label="First name"` to provide a descriptive label for screen readers without displaying a visible label.
+- **Input with associated `<label>`**: The last name field uses a visible `<label>` linked to the input via `for="lastName"` and `id="lastName"` for clear accessibility.
+- **Button with `aria-label`**: The submit button includes `aria-label="Submit registration form"` to clarify its purpose beyond the visible "Send" text.
+- **Link with `role="button"`**: A styled link includes `role="button"` and keyboard support to behave like a true button for screen reader users.
+
+Additionally, I’ve included two paragraphs in the HTML explaining the purpose of ARIA and web accessibility in my own words.
+
+
+
 ## Author
 Created by Ashley — When I had to ask for help or examples, every line was still typed manually to reinforce learning and build confidence with HTML, CSS, and JavaScript.

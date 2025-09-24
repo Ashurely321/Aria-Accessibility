@@ -14,6 +14,38 @@ main h2 {
   color: #00ffd0;
 }
 
+nav {
+  background-color: #1e1e2f;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 32px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border: 2px solid #00ffcc;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #00ffcc;
+  color: #1e1e2f;
+}
+
+
 .main_form {
   background-color: #1e1e1e;
   border: 2px solid #00ffd0;
@@ -73,4 +105,23 @@ main h2 {
   background-color: #00c9a7;
   box-shadow: 0 0 12px rgba(0, 201, 167, 0.6);
   transform: scale(1.05);
+
 }
+
+a[role="button"] {
+  display: inline-block;
+  background-color: #0ba2ee;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 16px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+a[role="button"]:hover {
+  background-color: #29527a;
+  transform: scale(1.05);
+}
+
