@@ -24,6 +24,23 @@
     <main>
       <h2>Contact me</h2>
 
+      <!-- //Accessibility explanation paragraphs -->
+      <p>
+        Web accessibility means designing websites that everyone can use,
+        extremely helpful for people with disabilities. It’s about making sure
+        content is readable, navigable, and usable no matter how they're
+        browsing; whether someone is using a mouse, keyboard, screen reader, or
+        other assistive technology they will be able to experience the content.
+      </p>
+
+      <p>
+        ARIA (Accessible Rich Internet Applications) helps improve accessibility
+        by adding extra information to HTML elements. It tells screen readers
+        how parts of a page behave, especially when using custom components or
+        interactive features that aren’t natively accessible. Everyone can
+        experience the page how it was meant to be.
+      </p>
+
       <form action="" class="main_form" id="main-form">
         <!-- First Name -->
         <div class="main_form__field">
@@ -139,7 +156,10 @@
         <!-- aria-label describes the button's purpose for screen readers, even if the visible text is short or vague -->
 
         <!-- Link with role="button" for accessibility -->
-        <a href="https://www.example.com" role="button">Visit Example Site</a>
+        <!-- Link styled and behaving like a button -->
+        <a href="#" role="button" tabindex="0" id="aria-button">
+          Visit Example Site
+        </a>
         <!-- role="button" tells assistive tech that this link behaves like a button, not just a navigation link -->
       </form>
 
