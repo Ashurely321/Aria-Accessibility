@@ -9,163 +9,169 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="header">
-      <h1>Welcome to Ashley's Registration Form</h1>
-    </header>
+    <div
+      class="container min-vh-100 d-flex justify-content-center align-items-center"
+    >
+      <header class="header">
+        <h1>Welcome to Ashley's Registration Form</h1>
+      </header>
 
-    <nav role="navigation">
-      <!-- role="navigation" helps screen readers identify this as a navigation menu -->
-      <ul>
-        <li><a href="#main-form">Go to Registration Form</a></li>
-        <li><a href="https://www.w3.org/WAI/ARIA/">Learn about ARIA</a></li>
-      </ul>
-    </nav>
+      <nav role="navigation">
+        <!-- role="navigation" helps screen readers identify this as a navigation menu -->
+        <ul>
+          <li><a href="#main-form">Go to Registration Form</a></li>
+          <li><a href="https://www.w3.org/WAI/ARIA/">Learn about ARIA</a></li>
+        </ul>
+      </nav>
 
-    <main>
-      <h2>Contact me</h2>
+      <main>
+        <h2>Contact me</h2>
 
-      <!-- //Accessibility explanation paragraphs -->
-      <p>
-        Web accessibility means designing websites that everyone can use,
-        extremely helpful for people with disabilities. It’s about making sure
-        content is readable, navigable, and usable no matter how they're
-        browsing; whether someone is using a mouse, keyboard, screen reader, or
-        other assistive technology they will be able to experience the content.
-      </p>
+        <!-- //Accessibility explanation paragraphs -->
+        <p>
+          Web accessibility means designing websites that everyone can use,
+          extremely helpful for people with disabilities. It’s about making sure
+          content is readable, navigable, and usable no matter how they're
+          browsing; whether someone is using a mouse, keyboard, screen reader,
+          or other assistive technology they will be able to experience the
+          content.
+        </p>
 
-      <p>
-        ARIA (Accessible Rich Internet Applications) helps improve accessibility
-        by adding extra information to HTML elements. It tells screen readers
-        how parts of a page behave, especially when using custom components or
-        interactive features that aren’t natively accessible. Everyone can
-        experience the page how it was meant to be.
-      </p>
+        <p>
+          ARIA (Accessible Rich Internet Applications) helps improve
+          accessibility by adding extra information to HTML elements. It tells
+          screen readers how parts of a page behave, especially when using
+          custom components or interactive features that aren’t natively
+          accessible. Everyone can experience the page how it was meant to be.
+        </p>
 
-      <form action="" class="main_form" id="main-form">
-        <!-- First Name -->
-        <div class="main_form__field">
-          <!-- Input with aria-label -->
-          <input
-            type="text"
-            id="firstName"
-            class="main_form__field__input"
-            required
-            aria-label="First name"
-          />
-        </div>
-
-        <!-- Last Name -->
-        <div class="main_form__field">
-          <!-- Input with associated label for accessibility -->
-          <label for="lastName" class="main_form__field__label"
-            >Last name</label
-          >
-          <!-- The 'for' attribute in the label matches the input's 'id', allowing screen readers to announce the label when the input is focused -->
-          <input
-            type="text"
-            id="lastName"
-            class="main_form__field__input"
-            required
-          />
-        </div>
-
-        <!-- Email -->
-        <div class="main_form__field">
-          <label for="email" class="main_form__field__label">Email</label>
-          <input
-            type="email"
-            id="email"
-            class="main_form__field__input"
-            required
-          />
-        </div>
-
-        <!-- Password -->
-        <div class="main_form__field">
-          <label for="password" class="main_form__field__label">Password</label>
-          <input
-            type="password"
-            id="password"
-            class="main_form__field__input"
-            required
-            minlength="6"
-          />
-        </div>
-
-        <!-- Birthdate -->
-        <div class="main_form__field">
-          <label for="birthdate" class="main_form__field__label"
-            >Birthdate</label
-          >
-          <input
-            type="date"
-            id="birthdate"
-            class="main_form__field__input"
-            required
-          />
-        </div>
-
-        <!-- Interests checkboxes -->
-        <div class="main_form__field">
-          <label class="main_form__field__label">Interests</label>
-
-          <div class="main_form__checkbox-group">
-            <label for="coding">
-              <input
-                type="checkbox"
-                id="coding"
-                name="interests"
-                value="coding"
-              />Coding
-            </label>
-            <label for="design">
-              <input
-                type="checkbox"
-                id="design"
-                name="interests"
-                value="design"
-              />Design
-            </label>
-            <label for="gaming">
-              <input
-                type="checkbox"
-                id="gaming"
-                name="interests"
-                value="gaming"
-              />Gaming
-            </label>
-            <label for="reading">
-              <input
-                type="checkbox"
-                id="reading"
-                name="interests"
-                value="reading"
-              />Reading
-            </label>
+        <form action="" class="main_form" id="main-form">
+          <!-- First Name -->
+          <div class="main_form__field">
+            <!-- Input with aria-label -->
+            <input
+              type="text"
+              id="firstName"
+              class="main_form__field__input"
+              required
+              aria-label="First name"
+            />
           </div>
-        </div>
 
-        <!-- button with aria-label for accessibility -->
-        <button
-          class="main_form__submit"
-          type="submit"
-          aria-label="Submit registration form"
-        >
-          Send
-        </button>
-        <!-- aria-label describes the button's purpose for screen readers, even if the visible text is short or vague -->
+          <!-- Last Name -->
+          <div class="main_form__field">
+            <!-- Input with associated label for accessibility -->
+            <label for="lastName" class="main_form__field__label"
+              >Last name</label
+            >
+            <!-- The 'for' attribute in the label matches the input's 'id', allowing screen readers to announce the label when the input is focused -->
+            <input
+              type="text"
+              id="lastName"
+              class="main_form__field__input"
+              required
+            />
+          </div>
 
-        <!-- Link with role="button" for accessibility -->
-        <!-- Link styled and behaving like a button -->
-        <a href="#main-form" role="button" tabindex="0" id="aria-button">
-          Return to Registration Form
-        </a>
-        <!-- role="button" tells assistive tech that this link behaves like a button, not just a navigation link -->
-      </form>
+          <!-- Email -->
+          <div class="main_form__field">
+            <label for="email" class="main_form__field__label">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="main_form__field__input"
+              required
+            />
+          </div>
 
-      <div id="output"></div>
-    </main>
+          <!-- Password -->
+          <div class="main_form__field">
+            <label for="password" class="main_form__field__label"
+              >Password</label
+            >
+            <input
+              type="password"
+              id="password"
+              class="main_form__field__input"
+              required
+              minlength="6"
+            />
+          </div>
 
+          <!-- Birthdate -->
+          <div class="main_form__field">
+            <label for="birthdate" class="main_form__field__label"
+              >Birthdate</label
+            >
+            <input
+              type="date"
+              id="birthdate"
+              class="main_form__field__input"
+              required
+            />
+          </div>
+
+          <!-- Interests checkboxes -->
+          <div class="main_form__field">
+            <label class="main_form__field__label">Interests</label>
+
+            <div class="main_form__checkbox-group">
+              <label for="coding">
+                <input
+                  type="checkbox"
+                  id="coding"
+                  name="interests"
+                  value="coding"
+                />Coding
+              </label>
+              <label for="design">
+                <input
+                  type="checkbox"
+                  id="design"
+                  name="interests"
+                  value="design"
+                />Design
+              </label>
+              <label for="gaming">
+                <input
+                  type="checkbox"
+                  id="gaming"
+                  name="interests"
+                  value="gaming"
+                />Gaming
+              </label>
+              <label for="reading">
+                <input
+                  type="checkbox"
+                  id="reading"
+                  name="interests"
+                  value="reading"
+                />Reading
+              </label>
+            </div>
+          </div>
+
+          <!-- button with aria-label for accessibility -->
+          <button
+            class="main_form__submit"
+            type="submit"
+            aria-label="Submit registration form"
+          >
+            Send
+          </button>
+          <!-- aria-label describes the button's purpose for screen readers, even if the visible text is short or vague -->
+
+          <!-- Link with role="button" for accessibility -->
+          <!-- Link styled and behaving like a button -->
+          <a href="#main-form" role="button" tabindex="0" id="aria-button">
+            Return to Registration Form
+          </a>
+          <!-- role="button" tells assistive tech that this link behaves like a button, not just a navigation link -->
+        </form>
+
+        <div id="output"></div>
+      </main>
+    </div>
     <!-- Javascript -->
     <script src="./main.js"></script>
   </body>
